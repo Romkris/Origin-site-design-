@@ -1,0 +1,56 @@
+@background-gray: linear-gradient(to bottom, #fcfcfc, #f3f3f3);
+@background-litegray: linear-gradient(to bottom, #f3f3f3, #fcfcfc);
+
+.logo a{
+	margin: 10px;
+	padding: 5px;
+	height: 40px;
+
+	text-align: center;
+	font-size: @logoFontSize;
+	color: @fontcolor;
+	font-family: @fontFamily;
+
+}
+
+.nav {
+	width: 960px;
+	height: 40px;
+	margin: 15px auto;
+	background: @background-gray;
+	border-radius: 4px;
+	display: flex;	
+	justify-content: flex-start;
+	align-items: center;
+	list-style-type: none;
+	box-sizing: border-box;
+	box-shadow: 0 0.3px 1px;
+
+
+}
+
+.nav-wrap a{
+	text-decoration: none;
+	margin: 5px;
+	padding: 10px;
+	font-size: @fontSize;
+	font-family: @fontFamily;
+	color: @fontcolor;
+	text-shadow: @textShadow;
+	box-sizing: border-box;
+	text-decoration: none;
+
+	 &:hover {
+	 	display: block;
+	 	background: @background-litegray;
+	 	width: 100%;
+		height: 40px;
+		display: flex;	
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		box-shadow: 0 0.3px 1px;
+
+
+	}
+}
