@@ -1,3 +1,56 @@
+.title {
+  text-align: center;
+  margin: 12px;
+  font-size: 40px;
+  font-family: "Palatino Linotype";
+  src: url("../font/ofont.ru_Palatino Linotype.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 520;
+}
+.titletext {
+  margin: 2px;
+  font-size: 16px;
+  color: #646c79;
+  font-family: Helvetica, Sans-Serif;
+}
+.titletext-2 {
+  display: block;
+  text-align: left;
+  line-height: 270%;
+  font-size: 20px;
+  font-family: "Palatino Linotype";
+  src: url("../font/ofont.ru_Palatino Linotype.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 520;
+  box-sizing: border-box;
+}
+.titletext-3 {
+  margin-top: -3px;
+  margin-bottom: 0px;
+  text-align: left;
+  font-family: "Palatino Linotype";
+  src: url("../font/ofont.ru_Palatino Linotype.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  box-sizing: border-box;
+  font-size: 36px;
+}
+.titletext-3-1 {
+  font-weight: 500;
+  font-size: 26px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  text-align: left;
+  font-family: "Palatino Linotype";
+  src: url("../font/ofont.ru_Palatino Linotype.ttf") format("truetype");
+  font-style: normal;
+}
+.text {
+  font-size: 12px;
+  font-family: Helvetica, Sans-Serif;
+  line-height: 1.5;
+  color: #646c79;
+}
 .Text {
   font-size: 12px;
   font-family: Arial san-serif;
@@ -6,6 +59,32 @@
 .Text--title {
   font-size: 18px;
   font-weight: 700;
+}
+.text-3 {
+  font-size: 12px;
+  font-family: Helvetica, Sans-Serif;
+  line-height: 1.5;
+  color: #646c79;
+  display: inline-block;
+  width: 113%;
+}
+.text-3-mirrow {
+  font-size: 12px;
+  font-family: Helvetica, Sans-Serif;
+  line-height: 1.5;
+  color: #646c79;
+  display: inline-block;
+  width: 101%;
+}
+.clients-text {
+  margin: 2px;
+  font-size: 14px;
+  color: #646c79;
+  font-family: Helvetica, Sans-Serif;
+}
+.Header {
+  width: 960px;
+  margin: 0 auto;
 }
 .logo a {
   margin: 10px;
@@ -50,10 +129,6 @@
   box-sizing: border-box;
   box-shadow: 0 0.3px 1px;
 }
-.img1 {
-  width: 15%;
-  height: 30%;
-}
 .block {
   background-color: #ccc;
   color: #fcfcfc;
@@ -85,7 +160,6 @@ textarea,
 input,
 button,
 optgroup {
-  margin: 0;
   padding: 0;
 }
 ul {
@@ -147,10 +221,14 @@ svg:not(:root) {
 main {
   display: block;
 }
+.main-conteiner {
+  width: 960px;
+  margin: 0 auto;
+}
 .Content {
   height: 100%;
   width: 960px;
-  padding: 25px;
+  padding-top: 25px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -164,20 +242,6 @@ main {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-}
-.title {
-  margin: 12px;
-  font-size: 40px;
-  font-family: "Palatino Linotype";
-  src: url("../font/ofont.ru_Palatino Linotype.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 520;
-}
-.titletext {
-  margin: 2px;
-  font-size: 16px;
-  color: #646c79;
-  font-family: Helvetica, Sans-Serif;
 }
 .Content2 {
   width: 960px;
@@ -216,71 +280,76 @@ main {
   height: 30px;
   margin: 25px;
 }
-.titletext-2 {
-  display: block;
-  text-align: left;
-  line-height: 270%;
-  font-size: 20px;
-  font-family: "Palatino Linotype";
-  src: url("../font/ofont.ru_Palatino Linotype.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 520;
-  box-sizing: border-box;
-}
-.text {
-  font-size: 12px;
-  font-family: Helvetica, Sans-Serif;
-  line-height: 1.5;
-  color: #646c79;
+.line {
+  border: 0;
+  width: 100%;
+  color: #FFFF00;
+  height: 2px;
+  background: #f5f5f5;
 }
 .conteiner-3 {
   width: 960px;
   margin: 0 auto;
   box-sizing: border-box;
-}
-.conteiner-3 .titletext-3 {
   display: flex;
-  text-align: left;
-  line-height: 270%;
-  font-size: 20px;
-  font-family: "Palatino Linotype";
-  src: url("../font/ofont.ru_Palatino Linotype.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 520;
-  box-sizing: border-box;
+  flex-direction: column;
 }
-.conteiner-3 .content-img {
-  box-sizing: border-box;
+.conteiner-3 .blokconteiner-wrap {
+  display: flex;
+  justify-content: space-around;
 }
-.conteiner-3 .text-3 {
-  font-size: 12px;
-  font-family: Helvetica, Sans-Serif;
-  line-height: 1.5;
-  color: #646c79;
-  margin: 5px;
+.conteiner-3 .blokconteiner-wrap .img-wrap,
+.conteiner-3 .blokconteiner-wrap .conteiner-text {
+  margin-right: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 50%;
 }
-.conteiner-3 .conteiner-text {
-  display: block;
-  position: relative;
-  left: 570px;
-  bottom: 350px;
-  width: 400px;
+.conteiner-3 .blokconteiner-wrap .img-wrap-mirrow,
+.conteiner-3 .blokconteiner-wrap .conteiner-text-mirrow {
+  margin-right: 0px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 50%;
 }
-.conteiner-3 .line {
-  color: #646c79;
+.OurClients .clients-header {
+  margin-top: 10px;
   width: 100%;
-  line-height: 10px;
+  height: 60px;
+  border: 1px solid #e5e5e5;
+  background-color: #fafafa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-gallery {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+.clients-gallery .clients-foto {
+  justify-content: space-around;
+  width: 14.35%;
+  height: 60px;
 }
 .button1 {
   width: 80px;
   height: 35px;
-  background: #02a7e1;
+  background: linear-gradient(to bottom, #01aae5, #0192c9);
   margin: 12px;
   box-shadow: 0 0.3px 1px;
   border-radius: 4px;
 }
 .button1 a {
-  font-size: 16px;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: Helvetica, Sans-Serif;
+}
+.button1:hover {
+  background: #015f7f;
+  font-size: 14px;
   color: #ffffff;
   font-family: Helvetica, Sans-Serif;
 }
@@ -298,15 +367,46 @@ main {
   color: #646c79;
   font-family: Helvetica, Sans-Serif;
 }
+.button2:hover {
+  background: #cccccc;
+}
+.button2:hover a {
+  color: #ffffff;
+}
 .button3 {
-  width: 80px;
-  height: 35px;
-  background: #02a7e1;
+  width: 70px;
+  height: 30px;
+  background: linear-gradient(to bottom, #01aae5, #0192c9);
   box-shadow: 0 0.3px 1px;
   border-radius: 4px;
 }
 .button3 a {
-  font-size: 16px;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: Helvetica, Sans-Serif;
+}
+.button3:hover {
+  background: #015f7f;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: Helvetica, Sans-Serif;
+}
+.button3-client {
+  margin-left: 10px;
+  width: 70px;
+  height: 30px;
+  background: linear-gradient(to bottom, #01aae5, #0192c9);
+  box-shadow: 0 0.3px 1px;
+  border-radius: 4px;
+}
+.button3-client a {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: Helvetica, Sans-Serif;
+}
+.button3-client:hover {
+  background: #015f7f;
+  font-size: 14px;
   color: #ffffff;
   font-family: Helvetica, Sans-Serif;
 }

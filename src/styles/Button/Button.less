@@ -1,18 +1,33 @@
+@shBattom: linear-gradient(to bottom, #01aae5, #0192c9);
+@shBattom1: #01aae5;
+@shBattom2: #ffffff;
+@darkshBattom: darken(@shBattom1, 20%);
+@darkshBattom2: darken(@shBattom2, 20%);
+
+
 .button1{
 	width: 80px;
 	height: 35px;
-	background: #02a7e1;
+	background: @shBattom;
 	margin: 12px;
 	box-shadow: 0 0.3px 1px;
 	border-radius: 4px;
 
 	a {
-		font-size: @logoFontSize;
-		color: @fontButtonColor;
-		font-family: @fontFamily;
-
+	font-size: @fontSize;
+	color: @fontButtonColor;
+	font-family: @fontFamily;
 	}
 }
+
+
+	.button1:hover {
+		background: @darkshBattom;
+        font-size: @fontSize;
+		color: @fontButtonColor;
+		font-family: @fontFamily;
+	}
+
 
 .button2{
 	width: 80px;
@@ -23,29 +38,65 @@
 	box-shadow: 0 0.3px 1px;
 	border-radius: 4px;
 
-
 	a {
 		font-size: @fontSize;
 		color: @fontcolor;
 		font-family: @fontFamily;
-
 	}
+}
 
+.button2:hover{
+	background: @darkshBattom2;
+
+	a{
+		color: @fontButtonColor;
+	}
 }
 
 .button3{
-	width: 80px;
-	height: 35px;
-	background: #02a7e1;
+	width: 70px;
+	height: 30px;
+	background: @shBattom;
 	box-shadow: 0 0.3px 1px;
 	border-radius: 4px;
 
-	a {
-		font-size: @logoFontSize;
+		a {
+		font-size: @fontSize;
 		color: @fontButtonColor;
 		font-family: @fontFamily;
-
+		
 	}
 }
+
+	.button3:hover {
+		background: @darkshBattom;
+        font-size: @fontSize;
+		color: @fontButtonColor;
+		font-family: @fontFamily;
+	}
+
+.button3-client{
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	background: @shBattom;
+	box-shadow: 0 0.3px 1px;
+	border-radius: 4px;
+
+		a {
+		font-size: @fontSize;
+		color: @fontButtonColor;
+		font-family: @fontFamily;
+		
+	}
+}
+
+	.button3-client:hover {
+		background: @darkshBattom;
+        font-size: @fontSize;
+		color: @fontButtonColor;
+		font-family: @fontFamily;
+	}
+
 
 

@@ -1,3 +1,67 @@
+.title{
+	text-align: center;
+	margin: 12px;
+	font-size: 40px;
+	font-family: "Palatino Linotype";  
+	src: url("../font/ofont.ru_Palatino Linotype.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: 520;
+}
+
+
+.titletext {
+	margin: 2px;
+	font-size: @logoFontSize;
+	color: @fontcolor;
+	font-family: @fontFamily;
+}
+
+.titletext-2 {
+	display: block;
+	text-align: left;
+	line-height: 270%;
+	font-size: 20px;
+	font-family: "Palatino Linotype";  
+	src: url("../font/ofont.ru_Palatino Linotype.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: 520;
+	box-sizing: border-box;
+}
+
+.titletext-3 {
+		margin-top: -3px;
+		margin-bottom: 0px;
+		text-align: left;
+		font-family: "Palatino Linotype";  
+		src: url("../font/ofont.ru_Palatino Linotype.ttf") format("truetype"); 
+		font-style: normal; 
+		font-weight: 500;
+		box-sizing: border-box;
+		font-size: 36px;
+		&-1{
+			font-weight: 500;
+			font-size: 26px;
+			margin-top: 5px;
+			margin-bottom: 0px;
+			text-align: left;
+			font-family: "Palatino Linotype";  
+			src: url("../font/ofont.ru_Palatino Linotype.ttf") format("truetype"); 
+			font-style: normal; 
+
+		}
+
+	}
+
+
+.text {
+	font-size: @fontSize2;
+	font-family: @fontFamily;
+	line-height: 1.5;
+	color: @fontcolor;
+
+}
+
+
 .Text {
 	font-size: 12px;
 	font-family: Arial san-serif;
@@ -7,4 +71,29 @@
 		font-size: 18px;
 		font-weight: 700;
 	}
+}
+
+.text-3 {
+	font-size: @fontSize2;
+	font-family: @fontFamily;
+	line-height: 1.5;
+	color: @fontcolor;
+	display: inline-block;
+	width: 113%;
+	&-mirrow{
+	font-size: @fontSize2;
+	font-family: @fontFamily;
+	line-height: 1.5;
+	color: @fontcolor;
+	display: inline-block;
+		width: 101%;
+
+	}
+}
+
+.clients-text{
+	margin: 2px;
+	font-size: @fontSize;
+	color: @fontcolor;
+	font-family: @fontFamily;
 }
